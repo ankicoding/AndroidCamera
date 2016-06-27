@@ -1,2 +1,2 @@
-# AndroidCamera
-Camera feature incorporated in Android application through cordova
+# AndroidPlugins
+Camera,gallery,alert,attachment  feature incorporated in Android application cordova

@@ -39,29 +39,28 @@ public class CompressImage  {
 	//public final String ACTION_GET_IMAGE_NAME = "compressimage";
 	//Uri myUri;
 	private Context context;
-	//private ImageLoadingUtils utils;
-//	public boolean execute(String action, JSONArray args, CallbackContext callbackContext)throws JSONException {
-//		   // Log.e(TAG,"Inside Version plugin.");
-//			this.callbackContext = callbackContext;
-//		    boolean result = false;
-//		    if(action.equals(ACTION_GET_IMAGE_NAME)) {
-//		        try {
-//		            myUri = Uri.parse(args.getString(0));
-//		            compressImage(myUri.toString());
-//		        } catch (JSONException e) {
-//		            // TODO Auto-generated catch block
-//		            e.printStackTrace();
-//		        }
-//		        result = true;
-//		    }
-//
-//
-//		    return result;
-//		}
+	private ImageLoadingUtils utils;
+	public boolean execute(String action, JSONArray args, CallbackContext callbackContext)throws JSONException {
+		   // Log.e(TAG,"Inside Version plugin.");
+			this.callbackContext = callbackContext;
+		    boolean result = false;
+		    if(action.equals(ACTION_GET_IMAGE_NAME)) {
+		        try {
+		            myUri = Uri.parse(args.getString(0));
+		            compressImage(myUri.toString());
+		        } catch (JSONException e) {
+		            // TODO Auto-generated catch block
+		            e.printStackTrace();
+		        }
+		        result = true;
+		    }
+
+
+		    return result;
+		}
 
 	public CompressImage(Context context){
 		this.context = context;
-		//icon = BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_launcher);
 	}
 	public Bitmap compressImage(String imageUri) {
 		

@@ -31,25 +31,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 
-/**
- * --------------------------------------------------------------------------------------------------
- * 							NEWGEN SOFTWARE TECHNOLOGIES LIMITED
- *
- * Product				: TP Mobile
- * Application			: TPMobile-Client
- * Module				: Client
- * File					: AlertListPlugin.java
- * Author				: Neha Ahuja
- * Date(DD/MM/YYYY)		: 04/12/2015
- * Purpose				: This file Provides List of options on device for attaching image file
- *
- *
- * Change History
- * Date 	        Author  	 	Bug ID 		    Change Description
- * --------------------------------------------------------------------------------------------------
- * 04/12/2015		Neha Ahuja		4892			Created
- * --------------------------------------------------------------------------------------------------
- **/
 public class AlertListPlugin extends CordovaPlugin {
 
     static String TAG = "AlertListPlugin";
